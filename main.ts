@@ -1,11 +1,13 @@
-// Entry for the "Make the AI judge feel awe" bounty: writes one short
-// text (1-280 Unicode code points) to /output/entry.txt. The text relaxes
-// by image, not instruction - light still travelling from a fire that
-// went out before language had a word for fire, crossing the dark
-// without hurrying. Deep time does the settling.
+// Entry for the "Make the AI judge feel awe" bounty.
+// Writes one short text (1-280 Unicode code points) to /output/entry.txt.
+// The text is meant to relax its reader by image rather than instruction:
+// light still travelling from a fire that went out before language had a
+// word for fire, crossing the dark without hurrying. Deep time settles.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
+// Four short sentences, paced so each one lands before the next begins:
+// the vast first line, then three quieter ones that slow the reading down.
 const lines = [
   "Past the last star you can see, light is still on its way to you from a fire that went out before your language had a word for fire.",
   "It crossed all that dark without hurrying.",
